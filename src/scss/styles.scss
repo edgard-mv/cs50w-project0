@@ -1,7 +1,20 @@
+$background: #DEDCCF;
+$primary: #136F63;
+$backgroundDark: #040F16;
+
+
 #pageTitle {
     text-align: center;
 }
 
 body {
-    background-color: #DEDCCF;
+    background-color: $background;
+}
+
+.card {
+    margin: 10px;
+}
+
+#genres-cards {
+    margin-top: 10px;
 }
