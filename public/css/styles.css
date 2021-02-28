@@ -1,16 +1,57 @@
-#pageTitle {
+#pageTitle, h2 {
   text-align: center;
+  margin: 15px;
 }
 
 body {
   background-color: #DEDCCF;
 }
 
+li.list-group-item ~ li.list-group-item.active, li.list-group-item.active {
+  background-color: #136F63;
+  border-color: #136F63;
+}
+
+li.list-group-item.active div h5 {
+  font-weight: bold;
+  text-shadow: 2px 2px darkcyan;
+}
+li.list-group-item.active p {
+  font-size: large;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+li.list-group-item.active small {
+  font-size: medium;
+}
+li.list-group-item.active p + small {
+  font-style: italic;
+}
+li.list-group-item.active p + small::before {
+  content: "Developed by ";
+  font-style: normal;
+}
+
+li.list-group-item ~ li.list-group-item.active {
+  margin-top: 10px;
+}
+
 .card {
   margin: 10px;
 }
 
-#genres-cards {
+.card-body {
+  text-align: center;
+  background-color: #136F63;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+#latestTitles {
+  margin-top: 10px;
+}
+
+#genresCards {
   margin-top: 10px;
 }
 

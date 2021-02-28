@@ -18,14 +18,14 @@
         crossorigin="anonymous">
     </script>
 
-    <link rel="stylesheet" href="./public/css/styles.css">
+    <link rel="stylesheet" href="/public/css/styles.css">
         
     <title>VGames</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">VGames</a>
+        <a class="navbar-brand" href="/index.html">VGames</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -33,14 +33,11 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">News <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/latest_titles.html">Latest Titles</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Latest Titles</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Best Selling</a>
+                    <a class="nav-link" href="/pages/best_selling.html">Best Selling</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -48,10 +45,17 @@
                         Genres
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="./pages/genres/sandbox.html">Sanbox</a>
+                        <a class="dropdown-item" href="./pages/genres/shooter.html">Shooter</a>
+                        <a class="dropdown-item" href="./pages/genres/arpg.html">Action RPG</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="./pages/genres/platformer.html">Platformer</a>
+                        <a class="dropdown-item" href="./pages/genres/fighting.html">Fighting</a>
+                        <a class="dropdown-item" href="./pages/genres/racing.html">Racing</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="./pages/genres/rts.html">Real Time Strategy</a>
+                        <a class="dropdown-item" href="./pages/genres/sports.html">Sports</a>
+                        <a class="dropdown-item" href="./pages/genres/hacknslash.html">Hack 'n' Slash</a>
                     </div>
                 </li>
             </ul>
@@ -88,77 +92,96 @@
             </div>
         </div>
     </div>
-    <div id="genres-cards" class="container">
+    <div id="genresCards" class="container">
+        <h2>Genres of Video Games</h2>
         <div class="row justify-content-center">
             <div class="col">
                 <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="Sandbox">
+                    <img src="/public/img/genres/sandbox.jpg" class="card-img-top" alt="Sandbox">
                     <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">
+                            Sanbox
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="Shooter">
+                    <img src="/public/img/genres/shooter.jpg" class="card-img-top" alt="Shooter">
                     <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">
+                            Shooter
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="Action RPG">
+                    <img src="/public/img/genres/arpg.jpg" class="card-img-top" alt="Action RPG">
                     <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">
+                            Action RPG
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="Platformer">
+                    <img src="/public/img/genres/platformer.jpg" class="card-img-top" alt="Platformer">
                     <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">
+                            Plarformer
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="Fighting">
+                    <img src="/public/img/genres/fighting.jpg" class="card-img-top" alt="Fighting">
                     <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">
+                            Fighting
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="Racing">
+                    <img src="/public/img/genres/racing.jpg" class="card-img-top" alt="Racing">
                     <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">
+                            Racing
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="Real Time Strategy">
+                    <img src="/public/img/genres/rts.jpg" class="card-img-top" alt="Real Time Strategy">
                     <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">
+                            Real Time Strategy
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="Sports">
+                    <img src="/public/img/genres/sports.jpg" class="card-img-top" alt="Sports">
                     <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">
+                            Sports
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="Hack 'n' Slash">
+                    <img src="/public/img/genres/hacknslash.jpg" class="card-img-top" alt="Hack 'n' Slash">
                     <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">
+                            Hack 'n' Slash
+                        </p>
                     </div>
                 </div>
             </div>

@@ -1,20 +1,73 @@
 $background: #DEDCCF;
 $primary: #136F63;
 $backgroundDark: #040F16;
+$secondary: #FF570A;
+$cancel: #D72638;
 
 
-#pageTitle {
+#pageTitle, h2 {
     text-align: center;
+    margin: 15px;
 }
 
 body {
     background-color: $background;
 }
 
+%litemp {
+    background-color: $primary;
+    border-color: $primary;    
+}
+
+li.list-group-item.active {
+    @extend %litemp;
+    div {
+        h5 {
+            font-weight: bold;
+            text-shadow: 2px 2px darkcyan;
+        }
+    }
+
+    p {
+        font-size: large;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    small {
+        font-size: medium;
+    }
+
+    p + small {
+        font-style: italic;
+    }
+    
+    p + small::before {
+        content: "Developed by ";
+        font-style: normal;
+    }
+}
+
+li.list-group-item ~ li.list-group-item.active {
+    @extend %litemp;
+    margin-top: 10px;
+}
+
 .card {
     margin: 10px;
 }
 
-#genres-cards {
+.card-body {
+    text-align: center;
+    background-color: $primary;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+#latestTitles {
+    margin-top: 10px;
+}
+
+#genresCards {
     margin-top: 10px;
 }
