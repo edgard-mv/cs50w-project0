@@ -71,3 +71,9 @@ li.list-group-item ~ li.list-group-item.active {
 #genresCards {
     margin-top: 10px;
 }
+
+@media screen and (max-width: 600px) {
+    #carouselGames {
+      display: none;
+    }
+}
