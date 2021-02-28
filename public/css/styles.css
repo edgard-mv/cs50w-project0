@@ -55,6 +55,11 @@ li.list-group-item ~ li.list-group-item.active {
   margin-top: 10px;
 }
 
+table.table tr {
+  background-color: #136F63;
+  color: whitesmoke;
+}
+
 @media screen and (max-width: 600px) {
   #carouselGames {
     display: none;
